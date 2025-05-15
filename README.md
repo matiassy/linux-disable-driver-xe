@@ -71,7 +71,7 @@ Y restaurando GRUB con:
 ```
 sudo nano /etc/default/grub
 ```
-# Restaurar línea GRUB_CMDLINE_LINUX_DEFAULT a "quiet splash"
+### Restaurar línea GRUB_CMDLINE_LINUX_DEFAULT a "quiet splash"
 ```
 sudo update-grub
 sudo update-initramfs -u
