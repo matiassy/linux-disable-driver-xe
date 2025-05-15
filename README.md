@@ -32,14 +32,14 @@ Este script:
 
 ### 1. Clonar el repositorio
 
-git clone https://github.com/TU_USUARIO/intel-gpu-i915-fix.git
-cd intel-gpu-i915-fix
+git clone https://github.com/matiassy/linux-disable-driver-xe.git
+cd linux-disable-driver-xe
 
 
 ### 2. Dar permisos y ejecutar el script
 
-chmod +x fix-intel-gpu-xe-block.sh
-./fix-intel-gpu-xe-block.sh
+chmod +x linux-disable-driver-xe.sh
+./linux-disable-driver-xe.sh
 
 ### 3. Reiniciar el sistema cuando se te indique
 🧪 Verificación
