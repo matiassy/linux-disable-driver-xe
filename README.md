@@ -31,46 +31,49 @@ Este script:
 ## 🚀 Uso
 
 ### 1. Clonar el repositorio
-
+```
 git clone https://github.com/matiassy/linux-disable-driver-xe.git
 cd linux-disable-driver-xe
-
+```
 
 ### 2. Dar permisos y ejecutar el script
-
+```
 chmod +x linux-disable-driver-xe.sh
 ./linux-disable-driver-xe.sh
-
+```
 ### 3. Reiniciar el sistema cuando se te indique
 🧪 Verificación
 
 Después del reinicio, ejecutá:
-
+```
 xrandr
-
+```
 Deberías ver ambos monitores con nombres reales como HDMI-1 y DP-1, en lugar de None-1.
 
 También podés revisar:
-
+```
 ls /sys/class/drm/
-
+```
 Y confirmar que aparecen correctamente:
-
+```
 card0
 card0-HDMI-A-1
 card0-DP-1
 ...
-
+```
 ### 🛟 Nota
 
 Si en el futuro el driver xe mejora o se requiere por otras razones, podés revertir los cambios eliminando el archivo:
-
+```
 sudo rm /etc/modprobe.d/blacklist-xe.conf
-
+```
 Y restaurando GRUB con:
-
+```
 sudo nano /etc/default/grub
+```
 # Restaurar línea GRUB_CMDLINE_LINUX_DEFAULT a "quiet splash"
+```
 sudo update-grub
 sudo update-initramfs -u
 sudo reboot
+```
